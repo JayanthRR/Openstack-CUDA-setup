@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "[Unit]
+Description=NVIDIA Persistence Daemon
+Wants=syslog.target
+[Service]
+Type=forking
+PIDFile=/var/run/nvidia-persistenced/nvidia-persistenced.pid
+Restart=always
+ExecStart=/usr/bin/nvidia-persistenced --verbose
+ExecStopPost=/bin/rm -rf /var/run/nvidia-persistenced
+[Install]
+WantedBy=multi-user.target" > /usr/lib/systemd/system/nvidia-persistenced.service
+
+sudo systemctl enable nvidia-persistenced
