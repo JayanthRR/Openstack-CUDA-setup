@@ -3,8 +3,8 @@ This repository contains scripts to install cuda, verify the installation, insta
 
 Git clone this repository, if you want to install the versions of cuda and cudnn availble here. Else, you will have to download the latest version and make minor changes to the scripts. I shall try to mention places where the script has to be changed
 
-- First, run cudan_install.sh.
-- Once, the script finishes execution, then run nvidia_cuda_driver.sh.
+- First, run cuda_install.sh.
+- Once, the script finishes execution, then run sudo nvidia_cuda_driver.sh.
 - Run cuda_samples.sh to check if the installation is correct
 - Run cudnn_install.sh to install cudnn v7. 
 

@@ -20,7 +20,7 @@ sudo apt-get install cuda
 # if everything is fine
 echo "finished installing cuda"
 
-echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
+echo 'export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}' >> ~/.bashrc
 source ~/.bashrc
 
 
